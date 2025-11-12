@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { DotLottie } from '@lottiefiles/dotlottie-web';
 
 @Component({
   selector: 'app-about',
-  standalone: false,
   templateUrl: './about.html',
-  styleUrl: './about.css',
+  styleUrls: ['./about.css'],
+  standalone: false // ✅ Important for module-based apps
 })
-export class About {
-
+export class About{
+  
 }
+

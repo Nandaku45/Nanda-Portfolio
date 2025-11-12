@@ -8,6 +8,9 @@ import { Footer } from './Components/footer/footer';
 import { Home } from './Pages/home/home';
 import { Contact } from './Pages/contact/contact';
 import { About } from './Pages/about/about';
+import { Projects } from './Pages/projects/projects';
+import { Project } from './project/project';
+import { FormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { About } from './Pages/about/about';
     Footer,
     Home,
     Contact,
-    About
+    About,
+    Projects,
+    Project
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),
